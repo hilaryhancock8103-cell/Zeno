@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我的个人网站</title>
+<meta name="description" content="摄影、文章与简历的极简个人网站">
+<meta property="og:title" content="我的个人网站">
+<meta property="og:description" content="摄影、文章与简历的极简个人网站">
+<meta property="og:type" content="website">
+<meta property="og:url" content="/">
+<meta property="og:image" content="/assets/placeholder.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/theme.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Zeno</a>
+    <nav class="nav" id="nav">
+      <a href="index.html">首页</a>
+      <a href="photos.html">摄影</a>
+      <a href="articles.html">文章</a>
+      <a href="resume.html">简历</a>
+      <a href="about.html">关于</a>
+      <a href="mailto:REPLACE_WITH_EMAIL">联系</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="切换主题">◐</button>
+      <button id="menu-toggle" class="icon-btn" aria-label="打开菜单">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero container">
+  </section>
+  <section class="section container">
+    <div class="section-header">
+      <h2>关于我</h2>
+      <a class="link" href="about.html">更多</a>
+    </div>
+    <div class="prose">
+      <p>终身学习，知行合一，本自具足</p>
+    </div>
+  </section>
+  <section class="section container">
+    <div class="section-header">
+      <h2>精选作品</h2>
+      <a class="link" href="photos.html">全部作品</a>
+    </div>
+    <div class="grid grid-3">
+      <img loading="lazy" src="assets/photos/buddha-close.jpg" alt="石窟大佛特写">
+      <img loading="lazy" src="assets/photos/canton-tower.jpg" alt="广州塔夜景">
+      <img loading="lazy" src="assets/photos/sunset-city.jpg" alt="城市落日">
+    </div>
+  </section>
+  <section class="section container">
+    <div class="section-header">
+      <h2>最近文章</h2>
+      <a class="link" href="articles.html">全部文章</a>
+    </div>
+    <div id="recent-articles" class="cards"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© 2025 Zeno</div>
+    <div class="social">
+      <a href="mailto:2574720892@qq.com">Email</a>
+    </div>
+  </div>
+  <div class="container legal">备案与声明预留</div>
+</footer>
+<script src="scripts/main.js"></script>
+<script src="scripts/articles.js"></script>
+</body>
+</html>

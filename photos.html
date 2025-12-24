@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>摄影</title>
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/theme.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Zeno</a>
+    <nav class="nav" id="nav">
+      <a href="index.html">首页</a>
+      <a href="photos.html" aria-current="page">摄影</a>
+      <a href="articles.html">文章</a>
+      <a href="resume.html">简历</a>
+      <a href="about.html">关于</a>
+      <a href="mailto:2574720892@qq.com">联系</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="切换主题">◐</button>
+      <button id="menu-toggle" class="icon-btn" aria-label="打开菜单">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="container">
+    <div class="section-header">
+      <h1>摄影</h1>
+      <div class="filters" id="filters">
+        <button class="chip active" data-filter="all">全部</button>
+        <button class="chip" data-filter="city">城市</button>
+        <button class="chip" data-filter="portrait">人像</button>
+        <button class="chip" data-filter="nature">自然</button>
+      </div>
+    </div>
+    <div class="grid grid-2" id="gallery-featured">
+      <img loading="lazy" src="assets/photos/buddha-full.jpg" alt="石窟大佛全景" data-tags="portrait">
+      <img loading="lazy" src="assets/photos/mao-statue.jpg" alt="橘子洲头雕像" data-tags="portrait">
+    </div>
+    <div class="grid grid-3" id="gallery" style="margin-top: 16px;">
+      <img loading="lazy" src="assets/photos/buddha-close.jpg" alt="石窟大佛特写" data-tags="portrait">
+      <img loading="lazy" src="assets/photos/canton-tower.jpg" alt="广州塔夜景" data-tags="city">
+      <img loading="lazy" src="assets/photos/sunset-city.jpg" alt="城市落日" data-tags="city">
+    </div>
+  </section>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lb-close" aria-label="关闭">✕</button>
+    <button class="lightbox-prev" id="lb-prev" aria-label="上一张">‹</button>
+    <img id="lb-img" alt="">
+    <button class="lightbox-next" id="lb-next" aria-label="下一张">›</button>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© 2025 Zeno</div>
+    <div class="social">
+      <a href="mailto:2574720892@qq.com">Email</a>
+    </div>
+  </div>
+</footer>
+<script src="scripts/main.js"></script>
+<script src="scripts/filter.js"></script>
+<script src="scripts/lightbox.js"></script>
+</body>
+</html>

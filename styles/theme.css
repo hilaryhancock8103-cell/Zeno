@@ -1,0 +1,7 @@
+[data-theme="dark"] {
+  --bg: #0F1115;
+  --text: #E5E7EB;
+  --muted: #9CA3AF;
+  --surface: #12151B;
+  --shadow: 0 6px 20px rgba(0,0,0,0.5);
+}

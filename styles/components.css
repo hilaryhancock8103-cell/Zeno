@@ -1,0 +1,8 @@
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.8); display: none; align-items: center; justify-content: center; z-index: 200; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 90vw; max-height: 80vh; border-radius: 12px; }
+.lightbox-close, .lightbox-prev, .lightbox-next { position: absolute; background: rgba(255,255,255,0.9); border: none; border-radius: 999px; width: 40px; height: 40px; cursor: pointer; }
+.lightbox-close { top: 20px; right: 20px; }
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+.card-meta { display: flex; gap: 8px; color: var(--muted); font-size: 12px; margin-top: 8px; }
